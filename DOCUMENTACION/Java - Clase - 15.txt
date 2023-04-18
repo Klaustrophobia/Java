@@ -1,0 +1,107 @@
+public static void main(String[] args) {
+    Scanner dato = new Scanner(System.in);
+    
+    System.out.println("Ingrese una calificacion : ");
+    
+    int a = dato.nextInt();
+    
+    System.out.println("La calificacion ingresada es : " +a);
+
+    System.out.println("Debido a los parametros establecidos esto respecta la nota: ");
+ 
+    if (a >= 65){
+    System.out.println("Aprobo con una nota de: " +a);
+    }else if(a < 65){
+    System.out.println("Reprobo con una nota de: " +a);
+    }else if(a == 0){
+    System.out.println("El estudiante no se presento a clase entonces tiene NSP");
+    }
+
+    if (a >= 80 && a <= 100){
+    System.out.println("El estudiante paso con una excelente calificacion");
+    }else if(a < 80 && a >= 70){
+    System.out.println("El estudiante paso con una nota decente");
+    }
+
+}
+
+
+
+
+OPERADORES EN JAVA 
+
++= ; Suma combinada	
+-= ; Resta combinada
+*= ; Producto combinado
+/= ; Division combinado
+%= ; Resto combinado
+x++ = x + 1 
+x-- = x - 1
+
+
+Operadores aplicados en codigo
+
+import java.util.Scanner;
+
+public class Operadores {
+    public static void main(String[] args) {
+     
+    //Declaracion del ingreso de variables//
+    Scanner dato = new Scanner(System.in);
+    
+    System.out.println("Ingresar dato 1: ");
+    int a = dato.nextInt();
+    
+    System.out.println("Ingresar el dato 2: ");
+    int b = dato.nextInt();
+    
+    int suma = a+=b;
+    int resta = a-=b;
+    int mult = a*=b;
+    int div = a/=b;
+    
+    System.out.println("La suma combinada es: " +suma);
+    System.out.println("La resta combinada es: " +resta);
+    System.out.println("La multiplicacion combinada es: " +mult);
+    System.out.println("La division combinada es: " +div);
+    
+    
+    }
+}
+
+
+
+Instruccion de repeticion While
+Las estructuras de repeticion (Ciclos) permite especificar que un programa debe repetir
+una accion mientras cierta condicion sea verdadera.
+
+Estructura de un ciclo While:
+
+while(Condicion-logica){
+accion-a-realizar;
+}
+
+
+import java.util.Scanner;
+
+public class Iterador {
+
+    public static void main(String[] args) {
+        
+        Scanner dato = new Scanner(System.in);
+        
+        System.out.println("Ingresar el valor maximo donde el iterador debe llegar: ");
+        int valorMaximo = dato.nextInt();
+        
+        int i = 0; //Valor donde va a comenzar
+        
+        while (i <= valorMaximo){
+        System.out.println("\n" +i);
+        i++; //Aqui el iterador ira aumentando hasta ser <= que el valor maximo
+        }
+    }
+    
+}
+
+
+
